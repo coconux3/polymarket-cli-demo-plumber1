@@ -18,9 +18,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true
+          persist-credentials: false
       - name: Static analysis
-        uses: super-linter/super-linter@latest
+        uses: super-linter/super-linter@2da136927bd4a73596db63044b504547c62cb854 # latest
         env:
           DEFAULT_BRANCH: main
           VALIDATE_ALL_CODEBASE: false
